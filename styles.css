@@ -1,0 +1,138 @@
+:root {
+	--default: black;
+}
+
+body {
+	background-color: black;
+	user-select: none;
+	overflow: hidden;
+}
+
+.leftside {
+	
+	left: 0px;
+    position: fixed;
+    top: 50%;
+    translate: 0px -50%;
+    height: 100%;
+    width: 1%;
+    align-content: center;
+	
+}
+
+.minihudsleft {
+	
+	margin: 10px 0px;
+	background: black;
+    border: solid white 3px;
+    border-left: none;
+    position: relative;
+    color: white;
+    width: 10em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s cubic-bezier(0, 0, 0, 1);
+	left: calc(0px - 12em - 6px);
+	
+}
+
+.hudbutton {
+	
+    color: black;
+    background: white;
+    position: absolute;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0.2em;
+    font-family: monospace;
+    right: -32px;
+    top: calc(-3px + 50%);
+    translate: 0px -50%;
+    border-radius: 0px 10px 10px 0px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+	
+}
+
+.minihudbuttons {
+	
+	border: solid white 3px;
+	padding: 0.5em;
+	transition: 0.2s;
+	filter: drop-shadow(0px 0px 5px beige);
+	
+}
+
+.minihudbuttons:hover {
+	
+	border-color: red;
+	filter: drop-shadow(0px 0px 5px red);
+	
+}
+
+.minihudbuttons:not(:first-child) {
+	
+	margin-top: 10px;
+	
+}
+
+.rando {
+	
+	position: absolute;
+	background: lime;
+	border-radius: 100%;
+	width: 4em;
+	height: 4em;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	/*transition: 0.1s cubic-bezier(1, 0, 0, 1);*/
+	filter: drop-shadow(0px 0px 5px white);
+	
+}
+
+.counter {
+	
+	color: yellow;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 5%;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: monospace;
+	animation: float 2s linear infinite alternate;
+	
+}
+
+.counterF {
+	
+	color: red;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 5%;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: monospace;
+	animation: float 2s linear infinite alternate;
+	animation-delay: -2s;
+	
+}
+
+@keyframes float {
+	from {rotate: 10deg;}
+	to {rotate: -10deg;}
+}
+
+
+
+
+
+
+
+
+
+
+
